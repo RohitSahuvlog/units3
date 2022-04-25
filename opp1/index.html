@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function person(n,a){
+        this.name=n,
+        this.age=a,
+        this.showName=()=>{
+            console.log(this.name)
+        }
+    }
+    var p1 = new person("Rohit","23")
+    console.log(p1.showName())
+    class persons{
+        constructor(n,a){
+            this.name=n,
+        this.age=a
+      
+        }
+        showName(){
+            console.log(this.name)
+        }
+    }
+    var p2 = new persons("masai","23")
+    console.log(p2)
+
+
+    class loin{
+        constructor(s,l){
+            this.species=s;
+            this.leg=l;
+            this.color="orange"
+        }
+    }
+    class don extends loin{
+        constructor(s,l){
+            super(s,l)
+            this.speed="60km";
+        }
+    }
+    let t1= new don("mammel",8)
+    console.log(t1)
+
+    // =============================================================
+var obj={
+    v:0,
+    get prop(){
+        return this.v
+    },
+    set prop(newValue){
+        this.v=newValue
+    }
+}
+console.log(obj.prop)
+obj.prop=42;
+console.log(obj.prop)
+
+
+function vehicle(thenwheels,thencolor){
+this.wheels=thenwheels;
+var color =thencolor;
+}
+vehicle.prototype={
+    constructor:vehicle,
+    getcolour: function(){
+return this.color;
+    },
+    getwheels:function(){
+        return this.wheels
+    }
+}
+
+</script>
+</html>
