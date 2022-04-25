@@ -1,0 +1,10 @@
+.videoplay{
+    width: 95vw;
+    height: 400px;
+}
+iframe{
+    width: 95vw;
+    height: 450px; 
+    margin: auto;
+    padding: 20px;
+}
